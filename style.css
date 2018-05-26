@@ -1,0 +1,29 @@
+li:nth-of-type(even) {
+	color: green;
+}
+
+li:nth-of-type(3) {
+	background-color: lightskyblue;
+}
+
+/*- The first list item should have a top border, 1px in width, solid and green;*/
+li:first-of-type {
+	border-top: solid green;
+	border-top-width: 1px;
+}
+
+/*- The last list item should have a bottom border 5px in width, dotted and blue;*/
+li:last-of-type {
+	border-bottom-width: 5px;
+	border-bottom: dotted blue;
+}
+/* Third and fifth list items' anchor should be colored in red.*/
+li:nth-of-type(5) a,
+li:nth-of-type(3) a {
+    color: red;
+}
+
+/*- Fifth list items' anchor should turn gray when hovered on.*/
+li:first-of-type a:hover {
+	color: grey;
+}
