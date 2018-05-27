@@ -1,2 +1,73 @@
-/*REMEMBER: NO ID'S AND CLASSES AND ONLY USE SELECTORS*/
+li:nth-of-type(even) {
+	color: green;
+}
 
+li:nth-of-type(3) {
+	background-color: lightskyblue;
+}
+
+/*- The first list item should have a top border, 1px in width, solid and green;*/
+li:first-of-type {
+	border-top: solid green;
+	border-top-width: 1px;
+}
+
+/*- The last list item should have a bottom border 5px in width, dotted and blue;*/
+li:last-of-type {
+	border-bottom-width: 5px;
+	border-bottom: dotted blue;
+}
+/* Third and fifth list items' anchor should be colored in red.*/
+li:nth-of-type(5) a,
+li:nth-of-type(3) a {
+    color: red;
+}
+
+/*- Fifth list items' anchor should turn gray when hovered on.*/
+li:first-of-type a:hover {
+	color: grey;
+}
+
+/* Second and fifth list item should lose the bullet points;*/
+
+li:nth-of-type(2),
+li:nth-of-type(5) {
+	list-style-type: none;
+}
+
+/*All regular text type input fields should have a gray background when focused on;*/
+
+input[type=text]:focus {
+    background-color: grey;
+}
+
+/*The first name input field should have green text color when focused on;*/
+
+div:first-of-type input:focus[type=text] {
+	color: green;
+}
+
+/*The last name input field should have blue text color when focused on;*/
+
+div:nth-of-type(2) input:focus[type=text] {
+	color: blue;
+}
+
+
+
+
+/*Password type input field should have invisible text when typed in;*/
+input[type=password] {
+  		color: white;
+}
+
+/*When a selection is made inside the email type input field, the selection background should turn yellow and the text color purple;*/
+input[type=email]::selection {
+    color: purple; 
+    background: yellow;
+}
+
+/*Submit type input should have red text color when hovered on.*/
+input[type=submit]:hover {
+	color: red;
+}
