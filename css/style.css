@@ -24,7 +24,7 @@ li:nth-of-type(3) a {
 }
 
 /*- Fifth list items' anchor should turn gray when hovered on.*/
-li:first-of-type a:hover {
+li:nth-of-type(5) a:hover {
 	color: grey;
 }
 
